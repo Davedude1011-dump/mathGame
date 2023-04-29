@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #21263A;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+/* computer display */
+
+.question-box {
+    background-color: #171B2C;
+    width: fit-content;
+    height: fit-content;
+    font-size: 5vw;
+    padding: 2vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    border-radius: 2vw;
+    color: white;
+    font-family: sans-serif;
+    text-align: center;
+}
+.question-input {
+    width: calc(70% - 8px);
+    height: calc(2.5vw - 8px);
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 10vw;
+    background-color: #21263A;
+    border: #171B2C 4px solid;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.newQuestion {
+    width: calc(30% - 10px);
+    margin-left: 5px;
+    height: 2.5vw;
+    font-size: 1vw;
+    border-radius: 10vw;
+    border: none;
+    background-color: #171B2C;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.center-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    width: fit-content;
+    height: fit-content;
+}
+
+.leaderboard {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50%;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+    list-style: none;
+}
+li {
+    margin-top: 5px;
+    font-size: 1.2vw;
+}
+.user {
+    list-style: disc;
+}
+@keyframes rainbow {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 500% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+ul li:first-child {
+    font-weight: bold;
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 200s linear infinite;
+    background-size: 400% 400%;
+  }
+
+.leave {
+    position: absolute;
+    width: 2vw;
+    height: 2vw;
+    cursor: pointer;
+    margin-top: 1vw;
+    margin-left: 1vw;
+}

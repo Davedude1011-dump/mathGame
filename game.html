@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+        
+        <script src="createQuestion.js" defer></script>
+        <link rel="stylesheet" href="game.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="leaveGame()" class="leave">
+            <path d="M0.999997 11L9.88889 11" stroke="#8D9EE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4.33331 7.66665L1.09665 10.9033C1.04331 10.9566 1.04331 11.0433 1.09665 11.0966L4.33331 14.3333" stroke="#8D9EE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6.55555 18.7778V19.3333C6.55555 20.2538 7.30178 21 8.22222 21H18.7778C20.0051 21 21 20.0051 21 18.7778L21 3.22222C21 1.99489 20.0051 0.999999 18.7778 0.999999H8.22222C7.30178 0.999999 6.55555 1.74622 6.55555 2.66667V3.22222" stroke="#8D9EE2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+
+        <div class="center-box">
+            <div class="question-box">
+                <div class="question"></div>
+            </div>
+    
+            <input type="text" placeholder="answer:" class="question-input">
+            <button class="newQuestion" onclick="checkQuestionInput()">Submit</button>
+        </div>
+
+        <ul class="leaderboard">
+            <li>Rhys - [ <span id="rhys"></span> ]</li>
+            <li>Thomas - [ <span id="thomas"></span> ]</li>
+            <li>Ruban - [ <span id="ruban"></span> ]</li>
+            <li>Sam - [ <span id="sam"></span> ]</li>
+        </ul>
+    </body>
+</html>
