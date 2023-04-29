@@ -37,13 +37,21 @@ var username = localStorage.getItem("gameName")
 var questionBox = document.querySelector(".question-box");
 var questionInput = document.querySelector(".question-input");
 
+questionInput.addEventListener("keydown", function(event) {
+    // If the "Enter" key is pressed
+    if (event.keyCode === 13) {
+        // Call your function here
+        checkQuestionInput();
+    }
+});
+
 document.getElementById(username).parentNode.classList.add("user")
 
 
 var BaseQuestions = [ // R gets swapped with a random number between -10 and 10
     "(R * R) + R",
     "R + R",
-    "R * R"
+    "R * R",
 ]
 
 var question = ""
