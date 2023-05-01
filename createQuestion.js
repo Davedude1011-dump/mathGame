@@ -171,3 +171,4 @@ db.ref("thomas").on("value", snapshot => { document.getElementById("thomas").tex
 db.ref("rhys").on("value", snapshot => { document.getElementById("rhys").textContent = snapshot.val(); sortLeaderboard() })
 db.ref("ruban").on("value", snapshot => { document.getElementById("ruban").textContent = snapshot.val(); sortLeaderboard() })
 db.ref("sam").on("value", snapshot => { document.getElementById("sam").textContent = snapshot.val(); sortLeaderboard() })
+db.ref("henry").on("value", snapshot => { document.getElementById("henry").textContent = snapshot.val(); sortLeaderboard() })

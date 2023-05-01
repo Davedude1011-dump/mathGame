@@ -2,14 +2,16 @@ players = [
     "thomas",
     "rhys",
     "ruban",
-    "sam"
+    "sam",
+    "henry"
 ]
 
 passwords = [
     "keyboard",
     "minecraft man",
     "pneumonoultramicroscopicsilicovolcanoconiosis",
-    "star finger"
+    "star finger",
+    "911"
 ]
 
 var startingLogin = localStorage.getItem("gameLogin") || ""
